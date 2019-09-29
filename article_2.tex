@@ -1,0 +1,289 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.4 (15/5/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[twoside,twocolumn]{article}
+
+\usepackage{blindtext} % Package to generate dummy text throughout this template 
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[english]{babel} % Language hyphenation and typographical rules
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Resumen" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{0.2em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Balanced ScoreCard y Business Model Canvas $\bullet$ Septiembre 2019 $\bullet$ Trabajo, Nro. 3} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+\setlength{\droptitle}{-4\baselineskip} % Move the title up
+
+\pretitle{\begin{center}\Huge\bfseries} % Article title formatting
+\posttitle{\end{center}} % Article title closing formatting
+\title{Balanced ScoreCard y Business Model Canvas} % Article title
+\author{%
+\textsc{Katerin Merino Quispe} \\[1ex] % Your name
+\textsc{Jorge Luis Mamani Maquera} \\[1.01ex] % Your name
+\textsc{Roberto Carlos Zegarra Reyes} \\[1.02ex] % Your name
+\textsc{Samuel Ray Nuñez Mamani} \\[1.03ex] % Your name
+\textsc{Jhony Jose Mamani Limache} \\[1.04ex] % Your name
+\normalsize Universidad Privada de Tacna \\  % Your institution
+\normalsize {} % Your email address
+%\and % Uncomment if 2 authors are required, duplicate these 4 lines if more
+%\textsc{Jane Smith}\thanks{Corresponding author} \\[1ex] % Second author's name
+%\normalsize University of Utah \\ % Second author's institution
+%\normalsize \href{mailto:jane@smith.com}{jane@smith.com} % Second author's email address
+}
+\date{Septiembre 30, 2019} % Leave empty to omit a date
+\renewcommand{\maketitlehookd}{%
+\begin{abstract}
+\noindent The Balanced Scorecard (CMI Spanish Acronym) and the Canvas model can be linked as complementary tools for entrepreneurs. The first develops goals and operational measures in four main perspectives for the purpose of achieving the mission and strategy. The second suggest a (re-) evolution in generating business models, establishing nine sections that reflect their logic. In the article a working model is developed that, based on the need for a CMI it relates its design to the information previously collected in the Canvas model, pointing their mutual necessity.
+\end{abstract}
+\begin{abstract}
+\noindent El Cuadro de Mando Integral (BSC) y el modelo Canvas pueden enlazarse como herramientas complementarias para los emprendedores. La primera desarrolla objetivos y medidas operativas en cuatro perspectivas principales para alcanzar la misión y estrategia. La segunda ha supuesto una (re-)evolución en la generación de modelos de negocio, estableciendo nueve apartados que reflejan su lógica. En el artículo se desarrolla un modelo de trabajo que, partiendo de la necesidad de disponer de un BSC, relaciona su diseño con la información recogida previamente en el modelo Canvas, señalando su mutua necesidad.
+\end{abstract}
+}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% Print the title
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section{Introducción}
+
+\lettrine[nindent=0em,lines=2]{C}anvas es una herramienta para la generación de modelos de negocios desarrollado por Alex Osterwalder (2004), que permite trabajar sobre la base de cómo una organización crea, proporciona y captura valor. Como indican Zott et al., (2011), aunque no hay consenso entre los académicos sobre lo que es un modelo de negocio, este concepto sí incluye una visión holística del negocio como unidad de análisis donde se enfatiza el papel de las actividades de la empresa en la generación de valor. Especialmente adecuado en la fase start-up o de búsqueda del modelo de negocio, en la que predominan la alta complejidad y la dificultad de considerar numerosas variables (Trimi \& Berbegal-Mirabent, 2012), el Canvas propone un lenguaje y visualización que permite describirlo fácilmente, facilitando su evolución y adaptación, de forma intuitiva, siendo fácil de usar y comprender para definir la alternativa estratégica seleccionada por la nueva empresa, donde exista una propuesta de valor que recoja, además de la importancia de los procesos internos, la relevancia de las relaciones con los diferentes stakeholders (Trimi \& Berbegal, 2012; Trkman et al., 2015; Anzola, Bayona \& García, 2015). De esta forma, este trabajo realiza un análisis de cada una de las principales perspectivas del BSC y la relaciona con los apartados del Canvas, dado que el propio Osterwalder (2004) defiende que el Canvas puede llegar a facilitar la identificación de medidas relevantes para mejorar la gestión de la empresa.
+
+
+\section{Objetivos}
+\begin{flushright}
+\begin{itemize}
+\lettrine[nindent=0em,lines=2]{S}e busca saber un poco mas sobre:
+
+%------------------------------------------------
+\textbf{}\\
+\textbf{¿El Cuadro de Mando Integral (CMI)?}\\
+-----------------------------------------------------
+\textbf{}\\
+Es una herramienta de gestión empresarial muy útil para medir la evolución de la actividad de una compañía, sus objetivos estratégicos y sus resultados, desde un punto de vista estratégico y con una perspectiva general. Gerentes y altos cargos la emplean por su valor al contribuir de forma eficaz en la visión empresarial, a medio y largo plazo.
+\textbf{}\\
+\textbf{}\\
+\textbf{¿Business Model Canvas: El lienzo de modelos de negocio?}\\
+--------------------------------------------------------
+Es una herramienta que permite obtener una visión de todos los elementos de la actividad empresarial en un único lienzo canvas. Una metodología para definir nuevos modelos de negocio o ayudar a nuevas empresas a integrarse en modelos de negocio de éxito ya establecidos por otras compañías o crear negocios novedosos.
+
+\textbf{}\\
+\textbf{}\\
+\textbf{}\\
+\textbf{}\\
+\textbf{}\\
+\textbf{}\\
+\textbf{}\\
+\textbf{}\\
+\textbf{}\\
+\textbf{Ventajas Business Model Canvas: El lienzo de modelos de negocio}\\
+--------------------------------------------------------
+\textbf{}\\
+\textbf{Ventajas}\\
+•	Ayuda al pensamiento estratégico, ya que nos ofrece una visión a alto nivel del modelo de negocio\\
+•	Permite entender las interrelaciones entre los distintos elementos del modelo, clave para valorar en escenarios ¿y si..? el impacto de cada cambio\\
+•	Se integra muy bien con otras herramientas del nuevo management, como las que provienen de la estrategia de los océanos azules, mapas de empatía…etc.\\
+\textbf{}\\
+\textbf{}\\
+\textbf{Desventajas}\\
+•	Excesivamente poco concreta, no es adecuada para pensamiento más operativo (es decir, no nos sirve para todo como algunos creen).\\
+•	No muestra a todos los actores clave, ni sus relaciones entre ellos (el modelo de operaciones)\\
+•	Por ser tan vaga podemos caer en el error de pensar que el business model canvas ES nuestro modelo de negocio, y no únicamente una abstracción de sus elementos clave.\\
+
+
+
+
+\section{Balanced ScoreCard y Business Model Canvas}
+
+\textbf{1.  Balanced ScoreCard: El Cuadro de Mando Integral (CMI)}\\
+Saber establecer y comunicar la estrategia corporativa para alinear los recursos y las personas en una dirección determinada no es tarea sencilla, y un Cuadro de Mando resulta de gran ayuda para lograrlo. A través de sus indicadores de control, financieros y no financieros, se obtiene información periódica para un mejor seguimiento en el cumplimiento de los objetivos establecidos previamente, y una visión clara del desarrollo de la estrategia. Así, y gracias a esta inteligencia empresarial, la toma de decisiones resulta más sencilla y certera, y se pueden corregir las desviaciones a tiempo.\\
+Sin embargo, a día de hoy, el balanced scorecard puede dar mucho más de sí.
+\textbf{}\\
+Cuando la sostenibilidad del negocio y su futuro dependen de la visibilidad de los tomadores de decisiones y su capacidad de respuesta, es preciso dotar al CMI de un potente aliado: planning analytics y las soluciones cognitivas.\\
+El uso y aplicación de un Cuadro de Mando Integral combinado con capacidades de planificación analítica de última generación es, no sólo posible, sino también aconsejable, para empresas medianas y pequeñas. Su efectividad no depende del tamaño de la compañía, por lo que, tanto las grandes organizaciones como las PYMES pueden aprovecharse de sus enormes beneficios.\\
+
+\textbf{}\\\textbf{}\\
+ \textbf{1.1.  Cuadro de Mando Integral: Indicadores y estructura }\\
+Cuatro son las perspectivas o puntos de vista que componen normalmente un Cuadro de Mando Integral y, desde las cuales se observa y recopila la información que será medida después. Aunque las que citamos a continuación son las más frecuentes, no son las únicas, ni siempre son las mismas: pueden variar en función de las características concretas de cada negocio.
+Eso sí, para un buen aprovechamiento del Cuadro de Mando Integral, no se recomienda utilizar más de siete indicadores en cada perspectiva. Es conveniente no recargar excesivamente el CMI para que resulte operativo y realmente funcional.\\
+\textbf{}\\
+
+\subsection{Perspectiva de aprendizaje y crecimiento}
+Se refiere a los recursos que más importan en la creación de valor: las personas y la tecnología. Incide sobre la importancia que tiene el concepto de aprendizaje por encima de lo que es en sí la formación tradicional. Los mentores y tutores en la organización juegan un papel relevante, al igual que la actitud y una comunicación fluida entre los empleados.
+\textbf{}\\\textbf{}\\
+\subsection{Perspectiva de procesos internos}
+Las métricas desde esta perspectiva facilitan una valiosa información acerca del grado en que las diferentes áreas de negocio se desarrollan correctamente. Indicadores en procesos de innovación, calidad o productividad pueden resultar clave, por su repercusión comercial y financiera.
+\textbf{}\\\textbf{}\\
+\subsection{Perspectiva del cliente}
+La satisfacción del cliente como indicador, sea cual sea el negocio  de la compañía, se configura como un dato a considerar de gran transcendencia. Repercutirá en el posicionamiento de la compañía en relación al de su competencia, y reforzará o debilitará la percepción del valor de la marca por parte del consumidor. 
+\textbf{}\\\textbf{}\\
+\subsection{Perspectiva financiera}
+Refleja el propósito último de las organizaciones comerciales con ánimo de lucro: sacar máximo partido de las inversiones realizadas. Desde el punto de vista de los accionistas, se mide la capacidad de generar valor por parte de la compañía y, por tanto, de maximizar los beneficios y minimizar los costes.
+
+\textbf{}\\\textbf{}\\\textbf{}\\
+ \textbf{1.2.  CMI: Beneficios }\\
+
+Los beneficios son múltiples, pero dos son los más destacables:\\
+
+1. Ofrece una amplia visión para un seguimiento detallado de la marcha del negocio, que engloba muchos aspectos, incluso más allá de los indicativos financieros, y permite observar otras variables decisivas en el buen desarrollo de la empresa.\\
+\textbf{}\\
+2. Contempla la evolución de la compañía desde una perspectiva amplia, permite planificar estrategias a medio y largo plazo, además de generar la información necesaria para tomar también decisiones rápidas y evitar así situaciones indeseadas.\\
+\textbf{}\\
+3. Con la plataforma de Planning Analytics logra llegar al nivel deseado en materia de escalabilidad, gobierno de datos y seguridad informática. Y si ya con Cognos Analytics se lograba un excelente rendimiento para reducir costes de migración de información y tiempos, hoy, con la computación cognitiva que la plataforma Watson pone a disposición de la compañía, los datos se convierten en rentabilidad.\\
+\textbf{}\\
+
+\textbf{1.3.  Implementación}\\
+
+El primer paso para la implementación del Cuadro de Mando Integral es la elaboración del mapa estratégico de la organización o del departamento, con el fin de establecer, para cada una de las perspectivas, el conjunto de objetivos que realmente sean relevantes para la consecución de la visión.\\
+
+El conjunto de objetivos se relacionan entre si por relaciones de causa-efecto, de modo que alcanzando uno de ellos nos acercamos más a la consecución de otros objetivos de otras perspectivas. Además el establecimiento de estas relaciones de causa-efecto permiten descartar los objetivos irrelevantes para la estrategia.\\
+
+Para el correcto control y seguimiento de cada objetivo relevante se debe establecer su o sus KPI (Key Performance Indicator) o Indicador Clave del Desempeño. Según Kaplan y Norton la cantidad de KPI no debería superar los 7 por perpectiva. Lo que nos lleva a que para un adecuado CMI lo recomendable es no superar los 27 indicadores.\\
+
+Por tanto un KPI debe ser clave, debe permitir el correcto control del proceso y su “no control” lleva a la descompensación del proceso y por tanto su alineamiento con la estrategia de la organización. Solo los indicadores considerados KPI formarán parte del Cuadro de Mando Integral.\\
+\textbf{}\\
+\textbf{}\\
+\textbf{}\\
+
+\textbf{2.  Business Model Canvas: El lienzo de modelos de negocio}\\
+El lienzo de modelos de Negocio es extensamente utilizado por las startups, debido a la flexibilidad y sencillez que ofrece a la hora de trabajar. Consiste en responder a una serie de preguntas clave y distribuir todos los elementos que pueden intervenir en la actividad de la empresa de forma ordenada en un esquema estructurado por 9 bloques.\\
+\textbf{}\\
+\textbf{2.1. Componentes de un Modelo de Negocio}\\
+\textbf{}\\
+\textbf{Segmentación de clientes}\\
+Los clientes son los protagonistas del modelo de negocio y por tanto comenzaremos el estudio definiéndolos mejor, detallando cuestiones sobre su diversificación o concentración, tipo de usuarios, si la base de clientes corresponde a un público de masas o exclusivista, etc.
+\textbf{}\\\textbf{}\\
+\textbf{Propuesta de valor}\\
+Es la solución que ofrecemos a un problema concreto o la satisfacción de una necesidad de nuestros clientes, existiendo una o varias propuesta de valor por segmento de clientes que hayamos identificado. Por ejemplo: la personalización, el trato directo o un mejor precio respecto a la competencia.
+\textbf{}\\\textbf{}\\
+\textbf{Canales}\\
+Son los medios por los cuales se realiza la entrega de nuestros productos o servicios a nuestros clientes, donde priman la sencillez de los procesos de pedido, la logística o la atención post-venta ante cualquier incidencia. Ya sea un producto digital o físico, o una prestación de servicio, los canales escogidos repercutirán directamente en la satisfacción de los clientes.
+
+\textbf{}\\\textbf{}\\
+\textbf{Relación con los clientes}\\
+El vínculo que establezcamos con los clientes será fundamental para una mayor fidelización y aumentar el número de prescriptores de la marca. En este sentido se debe definir el tipo de relación que mantendremos con ellos y la manera en la que afecta al resto de los bloques de nuestro lienzo canvas, como por ejemplo ofrecer una asistencia personal o automatizada repercute directamente en la propuesta de valor.
+\textbf{}\\\textbf{}\\
+\textbf{Flujo de ingresos}\\
+Se refiere a los mecanismos por los cuáles la empresa obtiene sus ingresos, definiendo si se establecen precios únicos o planes de suscripción, afiliación y demás modalidades que determinarán la eficiencia del flujo de caja, la liquidez disponible y las relaciones del flujo de ingresos con el resto de bloques repercutirán en unas mayores o menores ganancias.
+\textbf{}\\\textbf{}\\
+\textbf{Recursos clave}\\
+Es necesario identificar y establecer con exactitud los recursos físicos, humanos y monetarios necesarios para el desarrollo de la actividad empresarial, ya que una infradotación de recursos o lanzarse al mercado sin los medios necesarios puede derivar en una gestión deficiente, mientras que un derroche de recursos conduce a un alto coste de oportunidad.
+\textbf{}\\\textbf{}\\
+\textbf{Actividades clave}\\
+Son los procesos fundamentales sobre los que recae la responsabilidad de una buena interrelación entre los distintos bloques que forman el modelo de negocio. La mayoría son internos, como por ejemplo de producción, marketing, logística, etc. cuyo buen desempeño es fundamental para la eficiencia de un modelo de negocio.
+\textbf{}\\\textbf{}\\
+\textbf{Alianzas clave}\\
+Las alianzas permiten crear vínculos con agentes como proveedores, empresas de diferentes sectores, etc. que desarrollan actividades que nuestra empresa no genera por sí misma, bien porque no es eficiente en ellas o porque preferimos centrarnos en una mayor especialización de la propuesta de valor. Un ejemplo muy recurrente suele ser la externalización, como el alojamiento web, el transporte o la atención telefónica, para lo que es necesario identificar a los partners y proveedores más eficientes.
+\textbf{}\\\textbf{}\\
+\textbf{Estructura de costes}\\
+Determinar con claridad la estructura de costes de la empresa es la piedra angular de la viabilidad económica. Dicha estructura vendrá determinada en gran medida por el coste de los recursos y las alianzas clave, así como por otra serie de costes operacionales que debemos detallar en nuestro modelo de negocio. Para ello, se debe determinar una estructura de costes que permita obtener rendimientos a escala o de costes medios decrecientes.
+
+
+
+
+
+\section{Conclusiones}
+
+
+
+
+
+
+\textbf{}\\
+\textbf{}\\
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+
+
+
+\newblock 
+1. 1. Anzola, P., Bayona, C. \& García, T. (2015). "La generación de valor a partir de innovaciones organizativas: efectos directos y moderadores". Universia Business Review, 46: 70-93.         [ Links ]
+ \break
+\newblock 
+2. https://economiatic.com/business-model-canvas/
+\break
+\newblock 
+3. Da Silva, J., Pastor, A. \& Pastor, J. (2013). "El uso del Cuadro de Mando Integral como instrumento de medición para comparar los modelos de excelencia en gestión". Revista Ibero-Americana de Estratégia, 13(4): 18-32.
+\break
+\newblock
+4. Davila, A. \& Oyon, D. (2009). "Introduction to the Special Section on Accounting, Innovation and Entrepreneurship". European Accounting Review, 18(2): 277-280. 
+\break
+\newblock
+5.Ibáñez, N., Castillo, R., Núñez, A. \& Chávez, Z. (2010). "Prácticas gerenciales asociadas a la evolución de las perspectivas del Cuadro de Mando Integral". Negotium, 6(16): 136-172.
+\break
+\newblock
+6.
+\break
+
+
+\newblock {\em }
+ 
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+\end{itemize}
+\end{flushright}
+\end{document}
+
